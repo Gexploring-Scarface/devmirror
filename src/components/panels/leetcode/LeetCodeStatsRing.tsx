@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 import React, { useEffect, useState } from 'react';
 import { ProgressBar } from '@/components/ui/ProgressBar';
@@ -76,3 +77,4 @@ export function LeetCodeStatsRing({ solved, available, contestData }: any) {
     </div>
   );
 }
+

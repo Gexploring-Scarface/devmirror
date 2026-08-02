@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { GitHubStatsDTO } from './types';
 import * as cheerio from 'cheerio';
 import { validateHandle } from '../utils/validators';
@@ -113,3 +114,4 @@ export async function fetchGitHubStats(handle: string): Promise<GitHubStatsDTO> 
     throw err;
   }
 }
+

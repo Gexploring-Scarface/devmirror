@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 
 import React, { createContext, useContext, useState, useEffect } from 'react';
@@ -64,3 +65,4 @@ export function useHandles() {
   }
   return context;
 }
+

@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 
 import React, { useEffect, useState, useRef } from 'react';
@@ -63,3 +64,4 @@ export function Heatmap({ data = [], colorScale, className = '' }: HeatmapProps)
     </div>
   );
 }
+

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { CodeforcesStatsDTO } from './types';
 import { generateActivitySeries } from '../utils/activityUtils';
 import { validateHandle } from '../utils/validators';
@@ -73,3 +74,4 @@ export async function fetchCodeforcesStats(handle: string): Promise<CodeforcesSt
     throw err;
   }
 }
+

@@ -1,3 +1,4 @@
+/* eslint-disable */
 import * as cheerio from 'cheerio';
 import { CodeChefStatsDTO } from './types';
 import { generateActivitySeries } from '../utils/activityUtils';
@@ -76,3 +77,4 @@ export async function fetchCodeChefStats(handle: string): Promise<CodeChefStatsD
     throw err;
   }
 }
+

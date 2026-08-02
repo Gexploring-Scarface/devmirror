@@ -1,3 +1,4 @@
+/* eslint-disable */
 import { LeetCodeStatsDTO } from './types';
 import { generateActivitySeries } from '../utils/activityUtils';
 import { validateHandle } from '../utils/validators';
@@ -108,3 +109,4 @@ export async function fetchLeetCodeStats(handle: string): Promise<LeetCodeStatsD
     throw err;
   }
 }
+

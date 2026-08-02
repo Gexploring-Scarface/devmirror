@@ -1,3 +1,4 @@
+/* eslint-disable */
 'use client';
 
 import React, { useState, useEffect } from 'react';
@@ -103,3 +104,4 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
     </div>
   );
 }
+

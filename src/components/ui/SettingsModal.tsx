@@ -17,9 +17,14 @@ export function SettingsModal({ isOpen, onClose }: SettingsModalProps) {
 
   useEffect(() => {
     if (isLoaded) {
-      setLocalHandles(handles);
+      const stored = localStorage.getItem('devmirror-handles');
+      if (stored) {
+        setLocalHandles(JSON.parse(stored));
+      } else {
+        setLocalHandles({ github: '', leetcode: '', codeforces: '', codechef: '' });
+      }
     }
-  }, [handles, isLoaded]);
+  }, [isLoaded]);
 
   if (!isOpen) return null;
 

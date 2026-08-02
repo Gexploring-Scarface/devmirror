@@ -1,0 +1,94 @@
+@import "tailwindcss";
+
+:root {
+  --dm-bg-canvas: #0A0B0F;
+  --dm-bg-surface-1: #12141A;
+  --dm-bg-surface-2: #181B22;
+  --dm-bg-surface-3: #1F232C;
+
+  --dm-glass-fill: rgba(255, 255, 255, 0.035);
+  --dm-glass-border: rgba(255, 255, 255, 0.08);
+  --dm-glass-border-hi: rgba(255, 255, 255, 0.14);
+  --dm-glass-blur: 18px;
+
+  --dm-text-primary: #F2F3F5;
+  --dm-text-secondary: #9CA3AF;
+  --dm-text-muted: #676C76;
+  --dm-text-inverse: #0A0B0F;
+
+  --dm-github: #C9D1D9;
+  --dm-leetcode: #FFA116;
+  --dm-codechef: #C08552;
+
+  --dm-success: #22C55E;
+  --dm-warning: #F59E0B;
+  --dm-danger: #EF4444;
+  --dm-info: #3B82F6;
+
+  --dm-radius-xs: 8px;
+  --dm-radius-sm: 12px;
+  --dm-radius-md: 16px;
+  --dm-radius-lg: 20px;
+  --dm-radius-full: 999px;
+
+  --dm-shadow-ambient: 0 1px 2px rgba(0,0,0,0.3), 0 8px 24px rgba(0,0,0,0.35);
+  --dm-shadow-hover: 0 2px 4px rgba(0,0,0,0.35), 0 16px 40px rgba(0,0,0,0.5);
+  --dm-shadow-inset: inset 0 1px 0 rgba(255,255,255,0.04);
+}
+
+@theme {
+  --color-dm-canvas: var(--dm-bg-canvas);
+  --color-dm-surface-1: var(--dm-bg-surface-1);
+  --color-dm-surface-2: var(--dm-bg-surface-2);
+  --color-dm-surface-3: var(--dm-bg-surface-3);
+
+  --color-dm-text-primary: var(--dm-text-primary);
+  --color-dm-text-secondary: var(--dm-text-secondary);
+  --color-dm-text-muted: var(--dm-text-muted);
+  
+  --color-dm-github: var(--dm-github);
+  --color-dm-leetcode: var(--dm-leetcode);
+  --color-dm-codechef: var(--dm-codechef);
+  
+  --color-dm-success: var(--dm-success);
+  --color-dm-warning: var(--dm-warning);
+  --color-dm-danger: var(--dm-danger);
+  --color-dm-info: var(--dm-info);
+  
+  --radius-xs: var(--dm-radius-xs);
+  --radius-sm: var(--dm-radius-sm);
+  --radius-md: var(--dm-radius-md);
+  --radius-lg: var(--dm-radius-lg);
+
+  --font-mono: var(--font-jetbrains-mono), monospace;
+  --font-sans: var(--font-inter), sans-serif;
+}
+
+body {
+  background-color: var(--dm-bg-canvas);
+  color: var(--dm-text-secondary);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: var(--dm-radius-full);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+html {
+  scrollbar-gutter: stable;
+  scroll-behavior: smooth;
+}

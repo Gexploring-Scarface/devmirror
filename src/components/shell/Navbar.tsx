@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { RefreshCw, Settings2, Code2 } from 'lucide-react';
 import { SettingsModal } from '../ui/SettingsModal';
+import { WelcomeModal } from '../ui/WelcomeModal';
 
 export function Navbar() {
   const [scrolled, setScrolled] = useState(false);

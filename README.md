@@ -31,34 +31,6 @@ You can visit the live version of DevMirror right now:
 2. Enter your usernames for any platform you use.
 3. Hit **Save** and watch your stats come to life!
 
-## 💻 Local Development
-
-Want to host your own version or contribute? DevMirror is extremely easy to set up locally!
-
-### 1. Clone the repository
-```bash
-git clone https://github.com/Gexploring-Scarface/devmirror.git
-cd devmirror
-```
-
-### 2. Install dependencies
-```bash
-npm install
-```
-
-### 3. Set up Environment Variables
-Create a `.env.local` file in the root directory and add a GitHub Personal Access Token (this prevents API rate limits):
-```env
-GITHUB_PAT=your_github_personal_access_token
-```
-
-### 4. Run the development server
-```bash
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## 🛠️ Tech Stack
 
 - **Framework:** Next.js 16 (App Router)

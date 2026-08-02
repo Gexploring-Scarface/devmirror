@@ -101,7 +101,7 @@ export function Navbar() {
         </div>
       </div>
       
-      <WelcomeModal />
+      <WelcomeModal onContinue={() => setIsSettingsOpen(true)} />
       <SettingsModal isOpen={isSettingsOpen} onClose={() => setIsSettingsOpen(false)} />
     </nav>
   );

@@ -6,7 +6,7 @@ import { GlassCard } from './GlassCard';
 import { Settings2, X, Sparkles, ArrowRight } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export function WelcomeModal() {
+export function WelcomeModal({ onContinue }: { onContinue?: () => void }) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -23,6 +23,7 @@ export function WelcomeModal() {
   const handleClose = () => {
     setIsOpen(false);
     localStorage.setItem('devmirror-visited', 'true');
+    if (onContinue) onContinue();
   };
 
   return (

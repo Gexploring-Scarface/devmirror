@@ -1,36 +1,74 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 DevMirror
 
-## Getting Started
+<div align="center">
+  <h3>Your Ultimate Developer Identity Dashboard</h3>
+  <p>A beautiful, fully dynamic dashboard that aggregates your coding profiles from across the web into one stunning interface.</p>
+</div>
 
-First, run the development server:
+---
 
+## 🌟 What is DevMirror?
+
+DevMirror is a personal developer portfolio and statistics dashboard. Instead of sending recruiters to four different websites, you can send them to your DevMirror. It fetches your live data and presents it in a premium, glassmorphism-styled UI.
+
+Best of all? **It's completely dynamic.** Anyone can visit the site, click the settings gear ⚙️, and enter their own handles to instantly generate their personalized dashboard!
+
+## ✨ Features
+
+- **🐙 GitHub Integration:** Live contribution graphs, top repositories, and recent activity.
+- **💻 LeetCode Stats:** Beautiful radial charts for problem-solving stats and difficulty breakdowns.
+- **🏆 Codeforces & CodeChef:** Live contest ratings, rank progression graphs, and recent contest performances.
+- **🎨 Premium UI:** Built with modern design principles—glassmorphism, subtle micro-animations, and dynamic data fetching.
+- **🔒 Secure Architecture:** Enterprise-grade security headers and server-side request forgery (SSRF) protection built-in.
+- **💾 Local Persistence:** Your handles are saved directly in your browser's local storage.
+
+## 🚀 Try it out!
+
+You can visit the live version of DevMirror right now:
+**[View Live Dashboard](https://devmirror-git-main-thegoodme99-5117s-projects.vercel.app/)** *(Replace with your actual production URL)*
+
+1. Click the **Settings Gear (⚙️)** in the top right corner.
+2. Enter your usernames for any platform you use.
+3. Hit **Save** and watch your stats come to life!
+
+## 💻 Local Development
+
+Want to host your own version or contribute? DevMirror is extremely easy to set up locally!
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/Gexploring-Scarface/devmirror.git
+cd devmirror
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Set up Environment Variables
+Create a `.env.local` file in the root directory and add a GitHub Personal Access Token (this prevents API rate limits):
+```env
+GITHUB_PAT=your_github_personal_access_token
+```
+
+### 4. Run the development server
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🛠️ Tech Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework:** Next.js 16 (App Router)
+- **Language:** TypeScript
+- **Styling:** Tailwind CSS + Custom Vanilla CSS (Glassmorphism)
+- **Animations:** Framer Motion
+- **Data Fetching:** React Query & Cheerio (for web scraping)
+- **Deployment:** Vercel
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+<div align="center">
+  <i>Built with ❤️ for developers, by developers.</i>
+</div>
